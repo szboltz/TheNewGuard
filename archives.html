@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Archives | The New Guard</title>
+    <style>
+        :root {
+            --primary: #64ffda;
+            --bg: #0b0d11;
+            --card-bg: #171c28;
+            --border: #233554;
+            --text-main: #ccd6f6;
+            --text-dim: #8892b0;
+        }
+
+        body { background-color: var(--bg); color: var(--text-main); font-family: 'Segoe UI', sans-serif; margin: 0; }
+        
+        /* Nav */
+        nav {
+            background: #171c28; padding: 15px 5%; display: flex; justify-content: space-between;
+            align-items: center; border-bottom: 1px solid var(--border);
+        }
+        nav a { color: var(--text-main); text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+        .nav-brand { font-weight: bold; letter-spacing: 2px; color: var(--primary); }
+
+        header { padding: 60px 20px; text-align: center; background: #0f172a; border-bottom: 1px solid var(--border); }
+        
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        
+        .archive-section { margin-bottom: 80px; }
+        .section-header { 
+            display: flex; align-items: center; gap: 15px; margin-bottom: 30px; 
+            border-bottom: 1px solid var(--border); padding-bottom: 10px;
+        }
+        .section-header h2 { color: var(--primary); margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Document Grid */
+        .doc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .doc-card { 
+            background: var(--card-bg); padding: 20px; border: 1px solid var(--border);
+            border-radius: 4px; transition: 0.3s;
+        }
+        .doc-card:hover { border-color: var(--primary); background: #1d2533; }
+        .doc-tag { font-size: 0.7rem; color: var(--primary); text-transform: uppercase; font-weight: bold; }
+        .doc-title { display: block; margin: 10px 0; font-weight: bold; color: #fff; }
+        .doc-link { color: var(--text-dim); text-decoration: none; font-size: 0.85rem; }
+        .doc-link:hover { color: var(--primary); }
+
+        footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-brand">THE NEW GUARD</a>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="archives.html" style="color: var(--primary);">Archives</a>
+    </div>
+</nav>
+
+<header>
+    <h1>HISTORICAL ARCHIVES</h1>
+    <p style="color: var(--text-dim);">Centralized Repository for UAP and Parapsychological Data</p>
+</header>
+
+<div class="container">
+
+    <div class="archive-section">
+        <div class="section-header">
+            <h2>01. Media & Journalism</h2>
+        </div>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <span class="doc-tag">Press Archive</span>
+                <span class="doc-title">NY Times: 2017 UAP Disclosure</span>
+                <a href="#" class="doc-link">View Full Article →</a>
+            </div>
+            <div class="doc-card">
+                <span class="doc-tag">Video Intel</span>
+                <span class="doc-title">Local News Sightings (1990-2010)</span>
+                <a href="#" class="doc-link">Access Media Logs →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="archive-section">
+        <div class="section-header">
+            <h2>02. Government Organizations</h2>
+        </div>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <span class="doc-tag">CIA</span>
+                <span class="doc-title">Project Stargate Declassified Files</span>
+                <a href="#" class="doc-link">Download PDF →</a>
+            </div>
+            <div class="doc-card">
+                <span class="doc-tag">FBI</span>
+                <span class="doc-title">The Vault: Unexplained Phenonmena</span>
+                <a href="#" class="doc-link">Access FBI Records →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="archive-section">
+        <div class="section-header">
+            <h2>03. Academic & Civilian Research</h2>
+        </div>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <span class="doc-tag">MUFON</span>
+                <span class="doc-title">Case Management System (CMS)</span>
+                <a href="#" class="doc-link">View Public Database →</a>
+            </div>
+            <div class="doc-card">
+                <span class="doc-tag">University Study</span>
+                <span class="doc-title">Stanford: Materials Analysis Reports</span>
+                <a href="#" class="doc-link">Read White Paper →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="archive-section">
+        <div class="section-header">
+            <h2>04. International / Non-English origin</h2>
+        </div>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <span class="doc-tag">Brazil</span>
+                <span class="doc-title">Operação Prato (Operation Saucer)</span>
+                <a href="#" class="doc-link">View Portuguese Logs →</a>
+            </div>
+            <div class="doc-card">
+                <span class="doc-tag">France</span>
+                <span class="doc-title">GEIPAN: CNES Research Files</span>
+                <a href="#" class="doc-link">Access French Archive →</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 The New Guard | Intelligence Division
+</footer>
+
+</body>
+</html>
