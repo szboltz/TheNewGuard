@@ -30,7 +30,7 @@
         }
         .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 25px; font-size: 0.9rem; transition: 0.3s; }
         .nav-links a:hover { color: var(--primary); }
-        .nav-brand { font-weight: bold; letter-spacing: 3px; color: var(--primary); font-size: 1.2rem; }
+        .nav-brand { font-weight: bold; letter-spacing: 3px; color: var(--primary); font-size: 1.2rem; text-decoration: none; }
 
         header {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1350&q=80');
@@ -61,7 +61,6 @@
         .btn-outline { border: 1px solid var(--primary); color: var(--primary); }
         .btn:hover { filter: brightness(1.2); }
 
-        /* Report Section */
         .report-box { background: #112240; padding: 50px; border-radius: 12px; text-align: center; margin-top: 50px; }
 
         footer { text-align: center; padding: 50px; color: var(--text-dim); border-top: 1px solid var(--border); margin-top: 100px; }
@@ -70,8 +69,9 @@
 <body>
 
 <nav>
-    <div class="nav-brand">THE NEW GUARD</div>
+    <a href="index.html" class="nav-brand">THE NEW GUARD</a>
     <div class="nav-links">
+        <a href="archives.html">Archives</a>
         <a href="#community">Community</a>
         <a href="#report" class="btn-outline" style="padding: 5px 15px; margin-left: 15px;">Login</a>
     </div>
