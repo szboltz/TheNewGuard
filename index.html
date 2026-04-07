@@ -3,63 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The New Guard | UAP & Parapsychological Research</title>
+    <title>The New Guard | Community Hub</title>
     <style>
-        body {
-            background-color: #0b0d11;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
+        body { background-color: #0b0d11; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        
+        /* Navigation Bar */
+        nav {
+            background: #171c28;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #233554;
         }
+        nav a { color: #64ffda; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        .login-btn { border: 1px solid #64ffda; padding: 5px 15px; border-radius: 4px; }
+
         header {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1506318137071-a8e063b4bdb0?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            padding: 100px 20px;
-            text-align: center;
-            border-bottom: 2px solid #3a3f47;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; padding: 80px 20px; text-align: center;
         }
-        h1 { font-size: 3rem; letter-spacing: 5px; color: #fff; margin: 0; }
-        .tagline { color: #8892b0; font-style: italic; }
-        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
-        .section { margin-bottom: 50px; border-left: 3px solid #64ffda; padding-left: 20px; }
-        h2 { color: #64ffda; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: #171c28; padding: 20px; border-radius: 8px; border: 1px solid #233554; }
-        footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #495670; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        .section { margin-bottom: 60px; }
+        h2 { color: #64ffda; border-bottom: 1px solid #233554; padding-bottom: 10px; }
+
+        /* Forum/Community Cards */
+        .hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+        .hub-card { 
+            background: #171c28; padding: 30px; border-radius: 12px; 
+            border: 1px solid #233554; text-align: center;
+            transition: 0.3s;
+        }
+        .hub-card:hover { border-color: #64ffda; transform: translateY(-5px); }
+        .btn-join { 
+            display: inline-block; background: #64ffda; color: #0b0d11; 
+            padding: 10px 25px; border-radius: 5px; text-decoration: none; 
+            margin-top: 15px; font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
+<nav>
+    <div style="font-weight: bold; letter-spacing: 2px;">THE NEW GUARD</div>
+    <div>
+        <a href="#">Intel</a>
+        <a href="#">Archives</a>
+        <a href="#" class="login-btn">Login / Sign Up</a>
+    </div>
+</nav>
+
 <header>
-    <h1>THE NEW GUARD</h1>
-    <p class="tagline">Investigating the Unexplained. Documenting the Unknown.</p>
+    <h1>COMMUNITY HUB</h1>
+    <p style="color: #8892b0;">Join the network of independent investigators.</p>
 </header>
 
 <div class="container">
     <div class="section">
-        <h2>Mission Statement</h2>
-        <p>The New Guard is dedicated to the rigorous investigation of Unidentified Aerial Phenomena (UAP) and parapsychological events. We bridge the gap between civilian observation and scientific analysis.</p>
-    </div>
+        <h2>Active Forums</h2>
+        <p>Choose your platform to share sightings, analyze data, and connect with other members.</p>
+        
+        <div class="hub-grid">
+            <div class="hub-card">
+                <h3>Discord Command</h3>
+                <p>Real-time chat, voice briefings, and active investigation channels.</p>
+                <a href="#" class="btn-join">Join Discord</a>
+            </div>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Field Research</h3>
-            <p>Active monitoring and data collection of sightings and localized anomalies.</p>
-        </div>
-        <div class="card">
-            <h3>Archive</h3>
-            <p>Accessing declassified documents and maintaining a database of verified reports.</p>
-        </div>
-        <div class="card">
-            <h3>Community</h3>
-            <p>A collaborative hub for researchers, veterans, and civilian observers.</p>
+            <div class="hub-card">
+                <h3>Subreddit</h3>
+                <p>Deep-dive threads, document sharing, and public theory discussion.</p>
+                <a href="#" class="btn-join">Visit Reddit</a>
+            </div>
         </div>
     </div>
 </div>
 
 <footer>
-    &copy; 2026 The New Guard. All Rights Reserved.
+    <p style="text-align: center; color: #495670; padding: 40px;">&copy; 2026 The New Guard Research Group</p>
 </footer>
 
 </body>
